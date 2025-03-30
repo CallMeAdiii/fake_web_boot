@@ -5,11 +5,11 @@
 .magic-text {
     font-weight: bold;
     color: #fff;
-    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 }
 .box-magic {
     font-weight: bold;
-    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff;
 }
 .magic-hover:hover {
     box-shadow: 0 0 5px #9a9a9a, 0 0 5px #9a9a9a, 0 0 5px #9a9a9a;
