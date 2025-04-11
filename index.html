@@ -18,12 +18,16 @@
   <div class="container">
     <a class="navbar-brand text-white fw-bold" href="#">Sea salt shop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
+      <i class="bi bi-list text-white"></i>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a href="#" class="nav-link text-white fw-semibold" >Hlavní stránka</a></li>
         <li class="nav-item"><a href="items.html" class="nav-link text-white fw-semibold">Produkty</a></li>
+        <li class="nav-item"><a href="#faq" class="nav-link text-white fw-semibold" >FAQ</a></li>
+        <li class="nav-item"><a href="#kontakt" class="nav-link text-white fw-semibold" >Kontaktujte nás</a></li>
+
+
       </ul>
     </div>
   </div>
@@ -210,34 +214,107 @@
     </div>
   </div>
 </section>
+<section>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      form {
+        input, textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          resize: vertical;
+        }
+        button {
+          margin-top: 15px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #45a049;
+        }
+        max-width: 500px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+    </style>
+
+  <h2 style="color: white; justify-self: center;" class="mt-5" id="kontakt">Kontaktní formulář</h2>
+  <form action="mailto:tvoje@email.cz" method="POST" enctype="text/plain">
+    <label for="jmeno">Jméno:</label>
+    <input type="text" id="jmeno" name="Jméno" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="zprava">Zpráva:</label>
+    <textarea id="zprava" name="Zpráva" rows="5" required></textarea>
+
+    <button type="submit">Odeslat</button>
+  </form>
 
 
-<section class="container mt-5">
-  <div class="row td-flex justify-content-center">
-    <div class="col-lg-3 col-8 mb-4 d-flex align-items-center flex-column text-center ">
-      <i class="bi bi-brightness-high-fill display-3 text-warning"></i>
-      <h3 class="text-white">Spojeni s přírodou</h3>
-      <p class="text-white">Zachováváme přírodní ingredience, žádné škodlivé chemikálie.</p>
+
+  </section>
+<section id="faq" class="py-5">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <h2 style="margin-bottom: 20px; color: white">FAQ</h2>
+    <div class="accordion" id="accordionExample" style="max-width: 600px; width: 100%;">
+<div style="display: flex; justify-content: center;">
+  <div class="accordion" id="accordionExample" style="max-width: 600px; width: 100%;">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Proč náš produkt?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Nikdo v ČR nemá kvalitnější produkty než my
+        </div>
+      </div>
     </div>
-
-    <div class="col-lg-3 col-8 mb-4 d-flex align-items-center flex-column text-center">
-      <i class="bi bi-water display-3 text-info"></i>
-      <h3 class = "text-white">Přímo z Chorvatského moře</h3>
-      <p class = "text-white">Náš sprej pochází z přírodního zdroje.</p>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Jak dlouho trvá než mi doručíte produkt?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          2-3 Dny
+        </div>
+      </div>
     </div>
-
-    <div class="col-lg-3 col-8 mb-4 d-flex align-items-center flex-column text-center">
-      <i class="bi bi-bar-chart-line-fill display-3 text-primary"></i>
-      <h3 class="text-white">Posuňte váš vzhled na vyšší úroveň</h3>
-      <p class="text-white">S naším sprejem budete zářit v jakékoliv společnosti.</p>
-    </div>
-    <div class="col-lg-3 col-8 mb-4 d-flex align-items-center flex-column text-center">
-      <i class="bi bi-telephone-fill display-3 text-success"></i>
-      <h3 class="text-white">Ozvěte se nám</h3>
-      <p class="text-white">Rádi vám pomůžeme s jakýmkoliv dotazem.</p>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Co když mi produkt nebude vyhovovat?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Věřte mi že bude.
+        </div>
+      </div>
     </div>
   </div>
+</div>
 </section>
+
+
 
 <footer class="bg-secondary text-center py-2 text-light">
   &copy; Ondřej Brázdil
